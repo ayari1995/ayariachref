@@ -13,113 +13,122 @@ export class ProfileService {
     private http: HttpClient
   ) { }
 
-  projects:any = [
+  projects: any = [
     {
       id: 1,
-      title: 'Read data from Google spreadsheet in Angular',
+      title: 'AZ-104: Microsoft Azure Administrator',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/MyShop/#/',
-      githurl: 'https://github.com/mehulk05/MyShop',
-      mediumlink: 'https://itnext.io/read-data-from-google-spreadsheet-in-angular-209ee74b6cb4',
+      credentialId: '85EFA91244-2D0FBEF5974D-85E40AFB7C',
+      date: 'Apr 2023',
+      logo: 'assets/images/kodekloud.png',
+      link: 'https://kodekloud.com/certificate-verification/85EFA91244-2D0FBEF5974D-85E40AFB7C/',
       imgUrl: 'assets/images/z1.png',
-      tech: 'Angular 10 , Google SpreadsheetApi'
+      company: 'KodeKloud'
     },
 
     {
       id: 2,
-      title: 'Blog App Using MERN Stack',
+      title: 'Docker Certified Associate Exam Course',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/Blogapp-using-MERN/#/',
-      githurl: 'https://github.com/mehulk05/Blogapp-using-MERN',
-      mediumlink: 'https://itnext.io/blog-app-using-mern-stack-b0b4d69d7ea1',
+      credentialId: '85EFA91244-85E9B37EFC-85E40AFB7C',
+      date: 'Apr 2023',
+      logo: 'assets/images/kodekloud.png',
+      link: 'https://kodekloud.com/certificate-verification/85EFA91244-85E9B37EFC-85E40AFB7C/',
       imgUrl: 'assets/images/z26.png',
-      tech: 'React, Node, MongoDB, Express'
+      company: 'KodeKloud'
     },
 
 
     {
       id: 3,
-      title: 'CRUD operation using MEAN stack',
+      title: 'Graph Developer - Associate',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/Blog-using-mean/#/',
-      githurl: 'https://github.com/mehulk05/Blog-using-mean',
-      mediumlink: 'https://itnext.io/crud-operation-using-mean-stack-7dfa2f51ec8c',
+      credentialId: '00c218f3-4c6a-407e-aae0-4454125dc146',
+      date: 'Apr 2023',
+      logo: 'assets/images/apollo.jpeg',
+      link: 'https://www.apollographql.com/tutorials/certifications/00c218f3-4c6a-407e-aae0-4454125dc146',
       imgUrl: 'assets/images/z27.png',
-      tech: 'Angular 10, Node, MongoDB, Express'
+      company: 'Apollo GraphQL'
     },
 
     {
       id: 4,
-      title: 'Multiroom Chat Application in Node JS',
+      title: 'Elastic Stack',
       desc: '',
-      livedemo: 'https://chatapp-using-node.herokuapp.com/',
-      githurl: 'https://github.com/mehulk05/Chat-app-using-Nodejs',
-      mediumlink: 'https://medium.com/weekly-webtips/building-a-multiroom-chat-application-in-node-js-8a8adca5acf2',
+      credentialId: '59435',
+      date: 'Mar 2023',
+      logo: 'assets/images/greatLearning.jpeg',
+      link: 'https://olympus.mygreatlearning.com/courses/59435/certificate',
       imgUrl: 'assets/images/z23.png',
-      tech: 'Node JS,Socket IO'
+      company: 'Great Learning'
     },
 
 
     {
       id: 5,
-      title: 'Integrate Medium Blogs on your React App',
+      title: 'Agile Scrum Foundation',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/Medium-Blog-On-React-App#/',
-      githurl: 'https://github.com/mehulk05/Medium-Blog-On-React-App',
-      mediumlink: 'https://javascript.plainenglish.io/how-to-add-medium-blogs-on-your-react-app-a3898a729aad',
+      credentialId: '4077455',
+      date: 'Jan 2023',
+      logo: 'assets/images/simpleLearn.jpeg',
+      link: 'https://certificates.simplicdn.net/share/4077455_1673259453.pdf',
       imgUrl: 'assets/images/z4.png',
-      tech: 'React JS'
+      company: 'Simplilearn'
     },
 
 
 
     {
       id: 6,
-      title: 'News App using ReactJS (Parsing XML to JSON)',
+      title: 'Project Management Essentials Certification',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/NewsApp-using-React',
-      githurl: 'https://github.com/mehulk05/NewsApp-using-React',
-      mediumlink: 'https://codeburst.io/news-app-using-reactjs-f9752d7ab6ce',
+      credentialId: '302846709',
+      date: 'Jan 2023',
+      logo: 'assets/images/institute.jpeg',
+      link: 'https://drive.google.com/file/d/1oGrshjLgxW2QVwz-YgdekFVXUBSTg_x3/view?usp=sharing',
       imgUrl: 'assets/images/z24.png',
-      tech: 'React JS, XMl to JSON'
+      company: 'Management & Strategy Institute'
     },
 
 
 
     {
       id: 7,
-      title: 'Medium-Like Blog App Using Angular 9 and Firebase',
+      title: 'Angular (Advanced)',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/Blog-Book/',
-      githurl: 'https://github.com/mehulk05/Blog-Book',
-      mediumlink: 'https://codeburst.io/blogging-app-using-angular-9-and-firebase-98e36168d850',
+      credentialId: '610525',
+      date: 'Dec 2022',
+      logo: 'assets/images/study.jpeg',
+      link: 'https://drive.google.com/file/d/1HbQbCOh8hJ2ua9MkkVt6DukDFyzxNs0b/view?usp=sharing',
       imgUrl: 'assets/images/z21.png',
-      tech: 'HTML, Bootstrap, CSS, Angular-9, Firebase'
+      company: 'StudySection'
     },
 
 
 
     {
       id: 8,
-      title: 'COVID 19 Tracker (Statistics) app Using Angularr',
+      title: 'Angular for Advanced Level',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/COVOID-19/',
-      githurl: 'https://github.com/mehulk05/COVOID-19',
-      mediumlink: 'https://codeburst.io/covoid-19-tracker-statistics-app-using-angular-2358347b3d1f',
-      imgUrl: 'assets/images/z2.png',
-      tech: 'Angular 10 ,Bootstrap,Javascript'
+      credentialId: '40969',
+      date: 'Dec 2022',
+      logo: 'assets/images/greatLearning.jpeg',
+      link: 'https://olympus.mygreatlearning.com/courses/40969/certificate',
+      imgUrl: 'assets/images/z23.png',
+      company: 'Great Learning'
     },
 
 
     {
       id: 9,
-      title: 'Weather App with React',
+      title: 'Git Tutorial',
       desc: '',
-      livedemo: 'https://mehulk05.github.io/React-Weather/',
-      githurl: 'https://github.com/mehulk05/React-Weather-App',
-      mediumlink: 'https://medium.com/analytics-vidhya/weather-app-with-react-adaa7268bbdb',
-      imgUrl: 'assets/images/z9.png',
-      tech: 'React, Open MAp Api'
+      credentialId: '65405',
+      date: 'Dec 2022',
+      logo: 'assets/images/greatLearning.jpeg',
+      link: 'https://olympus.mygreatlearning.com/courses/65405/certificate',
+      imgUrl: 'assets/images/z23.png',
+      company: 'Great Learning'
     },
 
 
@@ -127,11 +136,12 @@ export class ProfileService {
       id: 10,
       title: 'Spring Boot + Angular 8 CRUD Example',
       desc: '',
-      livedemo: 'https://github.com/mehulk05/Spring-Boot-Angular-8-CRUD-Example',
-      githurl: 'https://github.com/mehulk05/Spring-Boot-Angular-8-CRUD-Example',
-      mediumlink: 'https://medium.com/analytics-vidhya/spring-boot-angular-8-crud-example-8aeafd47b54',
+      credentialId: 'https://github.com/mehulk05/Spring-Boot-Angular-8-CRUD-Example',
+      date: 'Apr 2023',
+      logo: 'https://github.com/mehulk05/Spring-Boot-Angular-8-CRUD-Example',
+      link: 'https://medium.com/analytics-vidhya/spring-boot-angular-8-crud-example-8aeafd47b54',
       imgUrl: 'assets/images/z28.png',
-      tech: 'Angular8, Java ,Hibernate'
+      company: 'Angular8, Java ,Hibernate'
     },
 
 
@@ -139,11 +149,12 @@ export class ProfileService {
       id: 11,
       title: 'Personal Portfolio Using Angular',
       desc: '',
-      livedemo: 'https://personal-portfolio0320.000webhostapp.com/',
-      githurl: 'https://github.com/mehulk05/Personal-Portfolio-Angular-Updated',
-      mediumlink: 'https://javascript.plainenglish.io/personal-portfolio-using-angular-8-and-bootstrap-5dde6fc7cf9b',
+      credentialId: 'https://personal-portfolio0320.000webhostapp.com/',
+      date: 'Apr 2023',
+      logo: 'https://github.com/mehulk05/Personal-Portfolio-Angular-Updated',
+      link: 'https://javascript.plainenglish.io/personal-portfolio-using-angular-8-and-bootstrap-5dde6fc7cf9b',
       imgUrl: 'assets/images/z11.png',
-      tech: 'Angular ,Bootstrap'
+      company: 'Angular ,Bootstrap'
     },
 
 
@@ -151,40 +162,43 @@ export class ProfileService {
       id: 12,
       title: 'Personal Portfolio Using Django',
       desc: '',
-      livedemo: 'https://personal-portfolio0320.000webhostapp.com/',
-      githurl: 'https://github.com/mehulk05/My-Personal-Portfolio',
-      mediumlink: 'https://mehulkothari05.medium.com/personal-portfolio-using-django-dba49c355905',
+      credentialId: 'https://personal-portfolio0320.000webhostapp.com/',
+      date: 'Apr 2023',
+      logo: 'https://github.com/mehulk05/My-Personal-Portfolio',
+      link: 'https://mehulkothari05.medium.com/personal-portfolio-using-django-dba49c355905',
       imgUrl: 'assets/images/z12.png',
-      tech: 'Django'
+      company: 'Django'
     },
 
     {
       id: 13,
       title: 'Movie Success Prediction',
       desc: '',
-      livedemo: 'https://mehulkothari05.medium.com/',
-      githurl: 'https://github.com/mehulk05',
-      mediumlink: 'https://mehulkothari05.medium.com/movie-success-prediction-a67d871a7b1',
+      credentialId: 'https://mehulkothari05.medium.com/',
+      date: 'Apr 2023',
+      logo: 'https://github.com/mehulk05',
+      link: 'https://mehulkothari05.medium.com/movie-success-prediction-a67d871a7b1',
       imgUrl: 'assets/images/z13.png',
-      tech: 'Python, Machine Learning, Django Framework.'
+      company: 'Python, Machine Learning, Django Framework.'
     },
 
     {
       id: 14,
       title: 'Matrimonial Website',
       desc: '',
-      livedemo: 'https://mehulkothari05.medium.com/',
-      githurl: 'https://github.com/mehulk05/Matrimonial-Website.git',
-      mediumlink: 'https://mehulkothari05.medium.com/matrimonial-website-9cd5247f477d',
+      credentialId: 'https://mehulkothari05.medium.com/',
+      date: 'Apr 2023',
+      logo: 'https://github.com/mehulk05/Matrimonial-Website.git',
+      link: 'https://mehulkothari05.medium.com/matrimonial-website-9cd5247f477d',
       imgUrl: 'assets/images/z14.png',
-      tech: 'HTML, CSS, Bootstrap, Jquery'
+      company: 'HTML, CSS, Bootstrap, Jquery'
     },
 
   ]
-  about2 = `Software Developer with 2.5+ years of experience .
-  Worked with Software Development Life Cycle(SDLC) and  agile methodologies .
-  Expertise in Angular 2+ All versions, React, Javascript,  Node JS and UI with Responsive Designs .
-  Have good understanding of Python, Jquery, Bootstrap, MongoDB, Firebase, and MYSQL`
+  about2 = `FULLSTCK SOFTWARE DEVELOPER with 3.5+ years of experience .
+  Worked with Software Development Life Cycle and  agile methodologies .
+  Expertise in Angular, Spring Boot, Javascrip and UI with Responsive Designs .
+  Have good understanding of DevOps, Java, Bootstrap, MongoDB, Firebase, and MYSQL`
 
   about = "Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do."
   resumeurl = "https://docs.google.com/document/d/1WODFuhIzQw2AXPsjt6f3rs-EDWhdhT8s89fOTrGRh70/edit?usp=sharing"
@@ -192,7 +206,7 @@ export class ProfileService {
   skillsData: any = [
     {
       'id': '1',
-      'skill': 'ANGULAR 2+',
+      'skill': 'ANGULAR',
       'progress': '85%'
     },
     {
@@ -202,13 +216,13 @@ export class ProfileService {
     },
     {
       'id': '3',
-      'skill': 'JAVASCRIPT JQUERY',
+      'skill': 'JAVASCRIPT',
       'progress': '80%'
     },
     {
       'id': '4',
-      'skill': 'SQL , MYSQL,MONOGO, FIREBASE',
-      'progress': '75%'
+      'skill': 'SQL , MYSQL , MONOGO , POSTGRES',
+      'progress': '75%' 
     },
     {
       'id': '5',
@@ -217,8 +231,8 @@ export class ProfileService {
     },
     {
       'id': '6',
-      'skill': 'PYTHON,JAVA',
-      'progress': '70%'
+      'skill': 'SPRING BOOT,JAVA',
+      'progress': '80%'
     }
   ];
 
@@ -226,82 +240,82 @@ export class ProfileService {
   educationData: any = [
     {
       'id': '1',
-      'from_to_year': '2015 - 2019',
-      'education': 'Bachelor\'s Degree',
-      'stream': 'Bachelor of Engineering',
-      'info': `Aditya Silver Oak Institute is GTU Affiliated and ranks 7th in Gujurat
-Completed B.E in Computer Engineering with 9.54 CGPA.
-Won the Best Student Award 3 times for excellent Academic records at College.
-Maintained above 9.1 spi in every semester of college academic .`,
-      'institution': 'ADITYA SILVER OAK INSTITUTE OF TECHNOLOGY, AHMEDABAD'
+      'from_to_year': '2017 - 2019',
+      'education': 'Master\'s Degree',
+      'stream': 'Telecommunication System & Networks',
+      'institution': 'Faculty of Mathematical, Physical and Natural Sciences of Tunis',
+      'imgUrl': 'assets/images/FSTLOGO.png',
+
+      'info': `The program is designed to address the industry's demand for expertise in network engineering and
+      web-based information system management.
+      The program focuses on preparing graduates to meet the needs of businesses in these thriving fields,
+      providing ample opportunities for professional growth and employment.`,
     },
     {
       'id': '2',
-      'from_to_year': '2013 - 2015',
-      'education': 'Higher Secondary',
-      'stream': 'Science and Mathematics',
-      'institution': 'GYANDEEEP VIDHYALAYA,AHMEDABAD',
-      'info': `The High School was mainly focus on the bases of science, mathematics, and Chemistry
-There was also a good base on physics, mathematics and chemistry.
-Completed my high school with 78%.`
+      'from_to_year': '2014 - 2017',
+      'education': 'Bachelor\'s Degree',
+      'stream': 'Electronics, Electrical Engineering & Automation (EEA)',
+      'institution': 'Faculty of Mathematical, Physical and Natural Sciences of Tunis',
+      'imgUrl': 'assets/images/FSTLOGO.png',
+      'info': `The program focuses on understanding, designing, and maintaining various electronic systems used in
+      industry.It covers technologies for electrical energy production and distribution, microelectronics, programming,
+      communication techniques, and encourages entrepreneurship.`
     },
     {
       'id': '3',
-      'from_to_year': '2012 - 2013',
+      'from_to_year': '2013 - 2014',
       'education': 'Secondary  School',
-      'stream': 'Science and Mathematics',
-      'institution': 'GYANDEEEP VIDHYALAYA,AHMEDABAD',
-      'info': `The Secondary aims at Maths , English , Science, Social Science, Litrature and Languages.
-Completed my Secondary school with 84%.`
+      'imgUrl': '',
+      'stream': 'Technical Sciences',
+      'institution': 'High School',
+      'info': `A national diploma essential for admission to university.`
     }
   ];
   exprienceData: any = [
     {
       id: 4,
-      company: 'Crest Data System',
-      location: 'Ahmedabad',
-      timeline: 'Aug 2021 to Present',
-      role: 'Software Developer',
-      work: 'Working as a full stack developer .Responsible for handling the UI in React and Managing the api calls in python Flask.'
+      company: 'SOFTParadigm',
+      location: 'Fulltime',
+      timeline: 'mar 2023 to Present',
+      role: 'FULLSTCK SOFTWARE DEVELOPER',
+      work: 'Design and development of an inspection checklist application that allows users to create checklists, submit reports, and conduct inspections.The solution is intended for a broad range of industries that require safety audits and inspections.',
+      imgUrl: 'assets/images/logo-SOFTParadigm.png',
 
     },
     {
       id: 3,
-      company: 'Indianic Info Tech',
-      location: 'Ahmedabad',
-      timeline: 'Feb 2021 to June 2021',
-      role: 'Software Developer',
-      work: `Technologies : Angular , Node JS , MongoDB .
-      Worked on the web application built in Angular for different business and Campaigns .
-      Contributed on developing the admin dashboard with different charts and insights for the application.`
+      company: 'AFNOR International IT Engineering',
+      location: 'Fulltime',
+      timeline: 'Feb 2020 - mar 2023 3 years & 1 month',
+      role: 'Full-Stack Web Developer',
+      imgUrl: 'assets/images/AFNOR.jpeg',
+
+      work: `Technologies : Angular , Java Spring Boot , SQL .
+
+      Design and development of an integrated operational functioning tool, CPM "Customer Production
+      Management," that aids in decision-making, tracks organizational activities, and provides an overall
+      view of the customer relationship with monitoring of each dedicated action.
+      
+      Design and development of a Dynamic Integrated Management Solution for Enterprise Management Systems
+      in the automotive sector based on the requirements of the IATF 16949 standard and its updates.`
     },
-  //   {
-  //     id: 2,
-  //     company: 'Growth99',
-  //     location: 'Remote',
-  //     timeline: '',
-  //     role: 'Frontend  Developer',
-  //     work: `Technologies : Angular , Node JS , MongoDB .
-  // Worked on the product of Growth99 which allowed other clients to come and integrate our product in their website .
-  // Worked on REST Api , Admin Dashboard , Appointment Booking for services and UI of the application .
-  // Created sections like templates for email, sms, landing pages, clinic, services, providers and triggers Automation.
-  // `
-  //   },
 
     {
       id: 1,
-      company: 'Tata Consultancy Services',
-      location: 'Gandhinagar and Pune',
-      timeline: 'June 2019 - Jan 2021',
-      role: 'Assistant System Engineer Trainee',
-      work: `Technologies : Angular , JavaSpring Boot , SQL. Apache Solr .
+      company: 'Technology Assistance Service T.A.S',
+      location: 'Internship',
+      timeline: 'Feb 2019 - Sep 2019 · 8 months',
+      role: 'Full-Stack Web Developer Trainee',
+      imgUrl: 'assets/images/TAS.png',
 
-  Project 1 : Worked on uploading two excel sheets with bulk of data and finding the matches for each business .
+      work: `Technologies : Angular , Java Spring Boot , SQL .
 
-  Project 2 : Worked on indexing the search results inside the application with bulk of data using Apache Solr and configuring the server with cron jobs and shell scripts .
+      Design and develop a commercial web application.
 
-  Worked on ranking the search results based on various criteria,features and delivering the accurate results based on generated scores.
-  `
+      Analyze documentation for a Cloud-supported Integrated Management Software.
+  
+      Prepare the services and entities needed to establish a connection with Enterprise Resources Planning. `
     },
 
 
@@ -309,21 +323,21 @@ Completed my Secondary school with 84%.`
 
   extraCircularInfo: any = [
     {
-      id:1,
+      id: 1,
       title: 'Blogger',
       description: '',
-      img: 'assets/images/Mehul Kothari – Medium1.png',
+      img: 'assets/images/Achref Ayari – Medium1.png',
       url: 'https://mehulkothari05.medium.com/'
     },
     {
-      id:1,
+      id: 1,
       title: 'Github',
       description: '',
       img: 'assets/images/Mehulkothari_github.png',
       url: 'https://github.com/mehulk05/'
     },
     {
-      id:1,
+      id: 1,
       title: 'Freelancing',
       description: '',
       img: 'assets/images/mehul_freelancing.png',

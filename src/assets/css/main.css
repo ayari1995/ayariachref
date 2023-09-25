@@ -1599,7 +1599,7 @@ body {
 }
 
 .nav-align-center {
-  text-align: center;
+  text-align: justify;
 }
 
 .nav-align-center .nav-pills {
@@ -4866,7 +4866,7 @@ img {
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
+  border: 15px solid #149ddd;
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -5044,4 +5044,59 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0;
+}
+
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #149ddd;
+  margin-right: 9px;
+}
+
+  .icon i {
+  color: #149ddd;
+  font-size: 16px;
+  line-height: 0;
+}
+
+  .icon-box:hover .icon {
+  background: #149ddd;
+}
+
+  .icon-box:hover .icon i {
+  color: #fff;
 }

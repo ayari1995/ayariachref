@@ -1,25 +1,44 @@
 <div class="section" id="projects">
     <div class="container cc-education">
-        <div class="h4 text-center mb-4 title">Projects</div>
-
+        <div class="section-title mb-4 title" >
+            <h2>Certifications</h2>
+        </div>  
+  
         <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
         <div class="row">
 
             <ng-container *ngFor="let project of projects| paginate: config">
                 <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                     <div class="blog-entry">
-                        <div class="card">
-                            <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = 'assets/images/gif.gif'" alt="Card image" style="width:100%">
-                            <div class="card-body">
+                        <!-- <div class="card">
+                             <div class="card-body">
                                 <h4 class="card-title">{{project.title}}</h4>
-                                <h5 class="card-text"><b>Technology :</b> {{project.tech}} </h5>
-                                <h5 class="card-text"><a href={{project.mediumlink}}>Read Blog on this  Project</a></h5>
+                                <div class="row">
+                                    <div class=""><img height="70" [src]="project.logo" alt="">   </div>   
+                                    <div class=""><h5 class="card-text"> {{project.company}} </h5></div>    
+        
+                                </div>
+                            
+                                <h5 class="card-text"> credential Id <p> {{project.credentialId}}</p></h5>
 
-                                <a href={{project.livedemo}} class="btn btn-primary stretched-link ml-2 mr-5">Live Demo</a>
                                 <a href={{project.githurl}} class="btn btn-primary stretched-link">GithubLink</a>
 
                             </div>
-                        </div>
+                        </div> -->
+
+
+                             <div class="card p-2" data-aos="zoom-in">
+                                <div class="text-right"> <small>{{project.company}}</small> </div>
+                                <div class="text-center  p-3"> <img [src]="project.logo" width="60" /> 
+                                    <span class="d-block font-weight-bold mt-1 ">{{project.title}}</span>
+                                    <hr> <span>Credential ID </span>
+                                    <div class="d-flex flex-row align-items-center justify-content-center">   <small class="ml-1">{{project.credentialId}}</small> </div>
+                                    <div class="d-flex justify-content-between mt-3"> <span>{{project.date}}</span> 
+                                        <a href={{project.link}} class="btn btn-primary stretched-link">Link</a>
+                                    </div>
+                                </div>
+                            </div>
+ 
                     </div>
                 </div>
             </ng-container>
